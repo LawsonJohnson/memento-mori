@@ -103,7 +103,7 @@ Hooks.once('init', async function() {
 
 async function addEffect(actor){
     log("Adding Effect to " + actor.name)
-    if(actor.effects.find(e => e.data?.flags?.core?.statusId === MODULE_ID)) return //no new effect if one is already present
+    if(actor.effects.find(e => e.flags?.core?.statusId === MODULE_ID)) return //no new effect if one is already present
     let linked = actor.isToken ? "unlinked" : "linked"
     let label = getSetting(`${linked}StatusName`);
     let icon = getSetting(`${linked}StatusIcon`);
@@ -122,7 +122,7 @@ async function addEffect(actor){
 
 async function removeEffects(actor){
     log("Removing Effect From" + actor.name)
-    let effects = actor.effects.filter(e => e.data?.flags?.core?.statusId === MODULE_ID)
+    let effects = actor.effects.filter(e => e.flags?.core?.statusId === MODULE_ID)
     if (effects.length===0) return
     for (let effect of effects) {
         await effect.delete()
