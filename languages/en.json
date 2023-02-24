@@ -1,10 +1,10 @@
 {
   "MEMENTO_MORI.Settings.HitPath.Name": "Path to changing value (A)",
-  "MEMENTO_MORI.Settings.HitPath.Hint": "The property path to the value which will change with each update, e.g. current HP or wounds.  This must be relative to actor.data, e.g. for the dnd5e system, where the HP value is stored at actor.data.data.attributes.hp.value, this setting should be data.attributes.hp.value",
+  "MEMENTO_MORI.Settings.HitPath.Hint": "The property path to the value which will change with each update, e.g. current HP or wounds.  This must be relative to actor, e.g. for the MÖRK BORG system, where the HP value is stored at actor.system.hp.value this setting should be system.hp.value",
   "MEMENTO_MORI.Settings.comparison.Name": "Comparison Type",
   "MEMENTO_MORI.Settings.comparison.Hint": "The type of comparison to perform, of the form A (comparison) B.  'Less than or equal to' is suitable for systems where HP counts down to 0, 'greater than or equal to' is suitable for systems where a number of wounds counts up to a maximum number of wounds.",
-  "MEMENTO_MORI.Settings.comparison.LT": "Less than or equal to (<=)",
-  "MEMENTO_MORI.Settings.comparison.GT": "Greater than or equal to (>=)",
+  "MEMENTO_MORI.Settings.comparison.LT": "Less than or equal to (≤)",
+  "MEMENTO_MORI.Settings.comparison.GT": "Greater than or equal to (≥)",
   "MEMENTO_MORI.Settings.CompareTo.Name": "Static value (B)",
   "MEMENTO_MORI.Settings.CompareTo.Hint": "A number or property path for the value to compare to.  For systems where HP counts down, this should generally be 0.  For systems where wounds count up, this should be the maximum number of wounds, or a path to that property (relative to actor.data).",
   "MEMENTO_MORI.Settings.UnlinkedStatusName.Name": "Status Name (unlinked token)",
